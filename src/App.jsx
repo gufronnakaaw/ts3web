@@ -10,7 +10,9 @@ function App() {
 
     async function main() {
       try {
-        const response = await fetch('http://172.168.10.10:4000/teamspeak');
+        const response = await fetch(
+          'https://api.rapikotakediri.cloud/teamspeak'
+        );
         const result = await response.json();
 
         setClients(result);
