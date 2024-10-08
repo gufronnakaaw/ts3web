@@ -11,7 +11,7 @@ function App() {
     async function main() {
       try {
         const response = await fetch(
-          'https://api.rapikotakediri.cloud/teamspeak'
+          'http://203.194.113.47:4000/teamspeak'
         );
         const result = await response.json();
 
